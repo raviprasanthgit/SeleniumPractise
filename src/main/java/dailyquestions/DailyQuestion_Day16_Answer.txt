@@ -1,0 +1,67 @@
+1)Consider one div having 100 spans with uniaue text. How to find expected text using XPath?
+     <html>
+	
+<body>
+		
+<div>
+			
+<span>text1</span>
+			
+<span>text2</span>
+			
+<span>text3</span>
+					
+-
+					
+-
+			
+<span>text100</span>
+		
+</div>
+	
+</body>
+
+</html>	
+
+  
+Text(): In this expression, with text function, we find the element with exact text match as shown above. In our case, we find the element with text "text3".
+
+Xpath=//span[text()='text3']
+
+
+
+2)how would you handle exception in your project specially when element is not found , not visible and when browser suddently closed?
+
+
+
+We handle such conditions and then prints a user friendly warning message to user through try/catch.
+Example:
+	
+     try {
+
+	driver.findElement(By.name(nameValue)).clear();
+			
+        driver.findElement(By.name(nameValue)).sendKeys(data);	
+			        System.out.println("The data: "+data+" entered successfully in field :");
+			        bReturn = true;
+
+	
+	} 
+    catch (NoSuchElementException e) {
+			
+        System.out.println("The Element not found");
+		
+        } 
+    catch (ElementNotVisibleException e) {
+	
+	System.out.println("The Element not Visible");
+		
+        } 
+    catch (NoSuchSessionException e) {
+			
+        System.out.println("The Browser is closed");
+		
+        }		
+
+
+

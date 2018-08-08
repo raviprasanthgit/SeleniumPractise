@@ -1,0 +1,20 @@
+
+1)what is the difference between syntax 1: //tagname[contains(text(),’value’)] and syntax 2: //tagname[text()[contains(.,’value’)]]
+Syntax 1: it is used when the value of any attribute changes dynamically, the contain feature has an ability to find the element with partial text
+<div id='population'>
+    kyrgyzstan: 150-500
+</div>
+//div[contains(text(),’ kyrgyzstan’)]
+Syntax 2:it is used when break tag is used between text node 
+<div id='population'>
+    kyrgyzstan: 150-500<br>
+    uzbekistan: 20-50
+</div>
+//div[text()[contains(.,' uzbekistan')]]
+
+2)what is the difference between ‘following’ and following-sibling’?
+Following:  it is used to find following lines from the current line of different hierarchy located by xpath
+//tagname [@attribute=’value’]/following::tagname
+Following-sibling:  it is used to find following lines with in same hierarchy of  same parent 
+//tagname [@attribute=’value’]/following-sibling::tagname
+

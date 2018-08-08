@@ -1,0 +1,20 @@
+Answers for yesterday’s daily question
+1)what are the way to handle checked exceptions? Provide some  example  of checked exceptions you have seen in your project?
+
+Checked exception are compile time, which is checked at compile time. When  a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword.
+Example: Thread.sleep(); throws an error Unhandled exception type InterruptedException (compile time).It can be handled by Add throws declaration in class level (or) surround the method with try/catch block.
+
+2)how to automate dynamically changing object in selenium ?
+
+Using relative xpath you can automate dynamically change object in selenium. 
+1.//tagname [@attribute=’value’]
+//For static text
+2. //div[contains(text(),’ static text) (or) //div[text()[contains(.,' static text)]]
+Following webElement
+3) //tagname [@attribute=’value’]/following::tagname
+(or)By locating  static object , from there we can navigate to dynamically changing object.
+//tagname [@attribute=’value’]/following-sibling::tagname
+4)preceding webElement
+tagname [@attribute=’value’]/ preceding::tagname
+(or)
+//tagname [@attribute=’value’]/ preceding -sibling::tagname
