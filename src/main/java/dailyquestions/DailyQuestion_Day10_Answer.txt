@@ -1,0 +1,18 @@
+1)How To Move The Control To Last Window Opened By Selenium?
+
+//get all session ID for Window(Browser) opened by seleniumm
+// store all session id as string in set
+Set<String> allWindow= driver.getWindowHandles();
+
+//iteration through each session ID using for loop
+for (String eachwindow: allWindow) {
+
+//switching the contacts to next window
+driver.switchTo().window(eachwindow);
+}
+2)What Is Constructor In Java? Does Java Support Distructor?
+
+A Constructor Does Look Like A Method, But It's Not A Method. It's Got The Code That Runs When You Say New. The Code Will Runs When You Instantiate An Object. The Only Way To Invoke A Constructor Is With The Keyword New Followed By The Class Name, Every Class You Create Has Constructor, Even If You Don’t Write It Self
+
+No Java Don’t Have Destructor, Because Java Is A Garbage Collected Language You Cannot Predict When (Or Even If) An Object Will Be Destroyed. Hence There Is No Direct Equivalent Of A Destructor. There Is An Inherited Method Called Finalize , But This Is Called Entirely At The Discretion Of The Garbage Collector.
+

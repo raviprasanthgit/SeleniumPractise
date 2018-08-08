@@ -1,0 +1,50 @@
+1)What Are The Execptions Thrown By Alert,Frame ,Windows ?
+
+Alert Execptions:
+Unhandledalertexception= Execptions hierarchy of UnhandledAlertException
+
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+org.openqa.selenium.WebDriverException
+org.openqa.selenium.UnhandledAlertException
+Noalertpresentexception= Execptions hierarchy of NoAlertPresentException
+
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+org.openqa.selenium.WebDriverException
+org.openqa.selenium.NotFoundException
+org.openqa.selenium.NoAlertPresentException
+
+Frame Execptions:Execptions hierarchy of  NoSuchFrameException
+
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+org.openqa.selenium.WebDriverException
+org.openqa.selenium.NotFoundException
+org.openqa.selenium.NoSuchFrameException
+
+Windows Execptions:
+
+Nosuchwindowexception=Execptions hierarchy of NoSuchWindowException
+
+java.lang.Object
+java.lang.Throwable
+java.lang.Exception
+java.lang.RuntimeException
+org.openqa.selenium.WebDriverException
+org.openqa.selenium.NotFoundException
+org.openqa.selenium.NoSuchWindowException
+
+2)Can We Create Object For Interface?
+
+No We Can't Create An Object For Interface, Because  Interface Has Only Method Declaration(abstract method), No  Body Implementation For The Method
+
+3)What Will Happen If We Are No Implementing All The Method Of An Interface In Class Which Implements An Interface?
+
+It Throuth An Error Message The Class Must Implement The Inherited Abstract Method. And To Fix It. We Should Add Unimplemented Method Or Make Subclass As Apstract.

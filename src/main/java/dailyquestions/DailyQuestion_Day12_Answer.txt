@@ -1,0 +1,27 @@
+Write the xpath using preceding and absolute?
+The syntax for preceding is 
+//tagName[@attribute=’value’]/preceding -sibling::tagname
+//tagname[@attribute=’value’]/preceding::tagname
+
+syntax for Absolute Xpath:
+ /html/body/div[6]/div/div/div/div/ul/li[3]/a
+
+How To Locate The Elements Using Xpath?
+
+Inspect Element By Right On Mouse Or F12
+Absolute Xpath:
+ /html/body/div[6]/div/div/div/div/ul/li[3]/a
+Relative Xpath:
+1.//tagname[@attribute=’value’]
+//For static text
+2. //div[contains(text(),’ static text) (or) 
+//div[text()[contains(.,' static text)]]
+Following webElement
+3) //tagname [@attribute=’value’]/following::tagname
+(or)
+//tagname [@attribute=’value’]/following-sibling::tagname
+4)preceding webElement
+tagname [@attribute=’value’]/preceding::tagname
+(or)
+//tagname [@attribute=’value’]/preceding -sibling::tagname
+

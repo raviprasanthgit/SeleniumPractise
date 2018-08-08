@@ -1,0 +1,60 @@
+1.How to select value in dropdown?
+
+Class Dropdown{
+	System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+	
+	ChromeDriver driver=new ChromeDriver();
+	
+	//Load the URL
+	driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
+	
+	//maximize the window
+	driver.manage().window().maximize();
+	
+	//Click Sign up
+	driver.findElementByLinkText("Sign up").click();
+	
+	//Select Country "India" by uing vaue
+	WebElement country =driver.findElementById("userRegistrationForm:countries");
+	Select dropdown=new Select(country);
+	dropdown.SelectByValue("94");
+	
+	// Close Browser
+	driver.close();
+}
+
+2. Write a simple code to uncheck the checked exception. (use http://testleaf.herokuapp.com/pages/checkbox.html)
+public class CheckBox {
+
+
+	public static void main(String[] args) {
+
+		// Launch browser
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+
+		// load url
+		driver.get("http://testleaf.herokuapp.com/");
+		
+		// implicitwait
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		//click Checkbox link
+		driver.findElementByLinkText("Checkbox").click();
+
+		// Identify the element and store
+		WebElement checkbox=driver.findElementByXPath("//*[@id='contentblock']/section/div[1]/input[1]");
+
+		//verify check box is selected or not
+		if (checkbox.isSelected()) 
+			System.out.println("The check box is selected already");
+			checkbox.click();
+			System.out.println("The check box is deselected now");
+		else
+			System.out.println("The check box is not selected");
+
+		//close browser
+		driver.close();
+		
+	
+}

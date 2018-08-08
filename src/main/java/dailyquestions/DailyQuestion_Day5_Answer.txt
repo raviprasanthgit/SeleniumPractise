@@ -1,0 +1,35 @@
+1)Write a Java program to swap 2 numbers without using additional variable (Ex: int a=2; int b=3; should be swapped and a should become 3 and b should become 2)
+
+public class SwapTwoNUmbers {
+
+public static void main(String[] args) {
+
+int a = 10, b = 5;
+
+// Code to swap 'a' and 'b'
+a = a + b;  // a now becomes 15
+b = a - b;  // b becomes 10
+a = a - b;  // a becomes 5
+System.out.println("The number is swapped a:"+a+" b:"+b);
+}
+}
+2)write selenium program to print all option text in any dropdown?
+
+System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+ChromeDriver driver=new ChromeDriver();
+//Load the URL
+driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
+//maximize the window
+driver.manage().window().maximize();
+driver.findElementByLinkText("Sign up").click();
+WebElement country =driver.findElementById("userRegistrationForm:countries");
+Select dropdown=new Select(country);
+List<WebElement> allob=dropdown.getOptions();
+for (WebElement eachop : allob) {			
+System.out.println(eachop.getText());
+}
+i++;
+}
+
+
+

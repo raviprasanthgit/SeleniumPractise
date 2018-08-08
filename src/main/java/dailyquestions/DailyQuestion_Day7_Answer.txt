@@ -1,0 +1,49 @@
+There are three types of alerts
+
+Simple Alerts:
+Simple alerts just have a OK button on them. They are mainly used to display some information to the user.
+
+Confirmation Alerts:
+
+This alert comes with an option to accept or dismiss the alert.
+ 
+Prompt Alerts:
+
+In prompt alerts you get an option to add text to the alert box. 
+This is specifically used when some input is required from the user.
+
+
+Actions on the alert
+
+1) void dismiss() – The dismiss() method clicks on the “Cancel” button as soon as the pop up window appears.
+
+2) void accept() – The accept() method clicks on the “Ok” button as soon as the pop up window appears.
+
+3) String getText() – The getText() method returns the text displayed on the alert box.
+
+4) void sendKeys(String stringToSend) – The sendKeys() method enters the specified string pattern into the alert box.
+
+
+Snapshot
+Taking a snapshot in an alert is not possible in selenium
+
+
+
+
+
+
+2. What is overloading? How does it differ from overriding?
+
+
+Overloading occurs when two or more methods in the same class have the same name but different arguments.
+Overriding means having two methods with the same arguments (i.e., method signature), but different implementations. One of them would exist in the parent class, while another will be in the derived, or child class.Overriding allows a child class to provide a specific implementation of a method that is already provided its parent class
+
+Differences
+
+1. Overriding is a run-time concept while overloading is a compile-time concept.
+
+2. overloading is being done in the same class while for overriding base and child classes are required
+
+3. Return type of method does not matter in case of method overloading, it can be same or different. However in case of method overriding the overriding method can have more specific return type.
+
+4. Argument list should be different while doing method overloading. Argument list should be same in method Overriding

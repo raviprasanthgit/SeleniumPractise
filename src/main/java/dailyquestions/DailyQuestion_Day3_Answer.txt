@@ -1,0 +1,70 @@
+1) Write a progeram to Select the last but one option in any of the dropdown @http://testleaf.herokuapp.com/pages/Dropdown.html
+
+public class DropDown{
+
+public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+
+		//Load the URL
+		driver.get("http://testleaf.herokuapp.com/pages/Dropdown.html");
+
+		//maximize the window
+		driver.manage().window().maximize();
+
+		WebElement  sample=driver.findElementById("dropdown1");
+
+		Select drop=new Select(sample);
+
+		List<WebElement> alloption = drop.getOptions();
+
+		int lastoption = alloption.size()-1;
+
+		for (WebElement eachop : alloption) {
+
+
+			if (i==lastoption) {
+				eachop.click();
+			}
+			i++;
+		}		
+	}
+}
+
+2)How to check if the given checkbox is checked or not. For example, try in http://leafground.com/pages/checkbox.html
+
+public class CheckBox {
+
+
+	public static void main(String[] args) {
+
+		// Launch browser
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+
+		// load url
+		driver.get("http://testleaf.herokuapp.com/");
+		
+		// implicitwait
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
+		//click Checkbox link
+		driver.findElementByLinkText("Checkbox").click();
+
+		// Identify the element and store
+		WebElement checkbox=driver.findElementByXPath("//*[@id='contentblock']/section/div[1]/input[1]");
+
+		// select check box of java
+		checkbox.click();
+
+		//verify check box is selected or not
+		if (checkbox.isSelected()) 
+			System.out.println("The check box is selected");
+		else
+			System.out.println("The check box is not selected");
+
+		//close browser
+		driver.close();
+		
+	}
+}
