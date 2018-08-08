@@ -1,0 +1,28 @@
+1) What is the difference between ClassNotFound Exception and NoClassDefFoundError?
+
+ClassNotFoundException is an exception that occurs when you try to load a class at run time
+ using Class.forName() or loadClass() methods and mentioned classes are not found in the 
+ classpath.
+
+
+
+ NoClassDefFoundError is an error that is thrown when the Java Runtime System tries to load 
+ the definition of a class, and that class definition is no longer available
+ NoClassDefFoundError is an error that occurs when a particular class is present at 
+ compile time, but was missing at run time.
+
+
+
+
+
+2) What are the Scenarios in which finally block will not be executed at all?
+
+In a Java try{} ... catch{} ... finally{} block, code within the finally{} is 
+generally considered "guaranteed" to run regardless of what occurs in the try/catch. 
+However, there are three circumstances under which it will not execute:
+
+i) If System.exit(0) is called
+ii) A JVM Crash, will also prevent finally being called.
+i.e. the JVM stops immediately at this point and produces a crash report.
+iii) An infinite loop in try or catch would also prevent a finally being called.
+iv) if the current thread is interrupted or killed.

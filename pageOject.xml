@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="pageObject" verbose="5">
+
+<parameter name="url"
+		value="http://leaftaps.com/opentaps/control/main"></parameter>
+	<parameter name="uname" value="demosalesmanager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	
+  <test  name="createLeadWithPOM">
+    <classes>
+      <class name="week6.day2.cw.pages.TestCase02_CreateLead"/>
+    </classes>
+  </test> <!-- createLeadWithPOM -->
+</suite> <!-- pageObject -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ListenersSuite]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="uname" value="demosalesmanager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <listeners>
+    <listener class-name="listeners.testng.ListerTestNg"/>
+  </listeners>
+  <test thread-count="5" name="ListenersTest(failed)">
+    <classes>
+      <class name="listeners.testng.CreateLead">
+        <methods>
+          <include name="createLead"/>
+          <include name="login"/>
+          <include name="closeBrser"/>
+        </methods>
+      </class> <!-- listeners.testng.CreateLead -->
+    </classes>
+  </test> <!-- ListenersTest(failed) -->
+</suite> <!-- Failed suite [ListenersSuite] -->

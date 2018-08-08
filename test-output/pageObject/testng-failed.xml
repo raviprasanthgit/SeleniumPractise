@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [pageObject]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="uname" value="demosalesmanager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/control/main"/>
+  <test thread-count="5" verbose="5" name="createLeadWithPOM(failed)">
+    <classes>
+      <class name="week6.day2.cw.pages.TestCase02_CreateLead">
+        <methods>
+          <include name="testData"/>
+          <include name="startSuite"/>
+          <include name="createLeadTest"/>
+          <include name="flushReport"/>
+          <include name="login"/>
+          <include name="startTest"/>
+          <include name="closeBrser"/>
+        </methods>
+      </class> <!-- week6.day2.cw.pages.TestCase02_CreateLead -->
+    </classes>
+  </test> <!-- createLeadWithPOM(failed) -->
+</suite> <!-- Failed suite [pageObject] -->

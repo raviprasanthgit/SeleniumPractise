@@ -1,0 +1,15 @@
+1.How can you execute single testcase in two platforms at same time?
+ Selenium Grid is used to execute a single test case in two platforms as the same time. 
+	
+	Step 1: Start the hub and 2 nodes.
+	Step 2: Convert the test into TestNG XML file. Add the 'parallel' attribute with the value 'classes'.
+	Step 3: Run the XML file and the test case will run on two platforms.
+
+
+2.How can you achive mouse hover action using Action class?
+ Create an object for the Actions class and pass the driver in the constructor.
+ Using the moveToElement() method perform the mouse hover action.
+
+Example:	
+	Actions builder = new Actions(driver);
+	builder.moveToElement(webelement).perform();

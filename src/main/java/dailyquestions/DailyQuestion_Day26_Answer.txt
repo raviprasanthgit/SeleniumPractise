@@ -1,0 +1,23 @@
+Answers for questions:
+
+1)Define the syntax to create an object for a class. What are the name convention to be followed when create a class, method and variable. Explain with example?
+
+
+	Create an object for a class:
+<classname>  reference name = new <constructername()>;
+
+Name convention:
+Classname: should start with uppercase letter and be a noun e.g. String, Color, Button, System, Thread and etc.
+
+MethodName: should start with lowercase letter and be a verb e.g. Main(), gettext(), println() and etc.
+
+VariableName: should start with lowercase letter e.g. Firstname, lastname and etc.
+
+	
+	Ex:ChromeDriver driver = new ChromeDriver();
+
+
+2)What are the scenarios in which ID should not be used as a preferred locator?
+
+
+	The id is an attribute, which is used for identifying an element with its unique value(ID). when the value of id has numeric value(Non static) it’s not recommended to use because it may change dynamically for session.                        

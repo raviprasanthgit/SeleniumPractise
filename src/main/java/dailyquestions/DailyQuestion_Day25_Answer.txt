@@ -1,0 +1,28 @@
+1) We prefer to use Extent Reports. 
+
+Advantages of Extent Reports
+
+* Test Execution results will be shown in the form of PIE chart
+* It can generate online or offline reports
+* It can change the test method name in the report
+* It can generate stepwise log information in the report
+* It can segregate the tests using Test Categories.
+* It can insert any custom HTML in the logs by using an HTML tag
+* It can add recording of test runs in the report
+* Generate Step summary.
+* It can filter reports depends on status.
+* It provides execution history.
+* It fetches system details like OS, Java Version, and Memory and so on.
+
+2) Extent Reports:
+
+Extent Reports is a open source tool that is used to generate the reports with the status and screen shots of each step executed in each test case.
+In Extent Report, All information like who run the test when this test got passed, how much time does it took to get completed.
+
+Major feature is the rich GUI it possess.
+
+Also all the relevant details to the corresponding test can be provided make it pretty more easy for the person who is having a look into it.
+
+A dashboard is there to view all these details in a single shell.
+
+Apart from that its an opensource and can manage it pretty easily by a few lines of code.

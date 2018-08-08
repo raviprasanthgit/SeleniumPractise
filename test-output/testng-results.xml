@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="pageObject" duration-ms="34511" started-at="2018-07-29T07:07:58Z" finished-at="2018-07-29T07:08:33Z">
+    <groups>
+    </groups>
+    <test name="createLeadWithPOM" duration-ms="34511" started-at="2018-07-29T07:07:58Z" finished-at="2018-07-29T07:08:33Z">
+      <class name="week6.day2.cw.pages.TestCase02_CreateLead">
+        <test-method status="PASS" signature="startSuite()[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="startSuite" is-config="true" duration-ms="1439" started-at="2018-07-29T07:07:57Z" finished-at="2018-07-29T07:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSuite -->
+        <test-method status="PASS" signature="testData()[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="testData" is-config="true" duration-ms="0" started-at="2018-07-29T07:07:58Z" finished-at="2018-07-29T07:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testData -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="startTest" is-config="true" duration-ms="0" started-at="2018-07-29T07:07:58Z" finished-at="2018-07-29T07:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="login" is-config="true" duration-ms="15219" started-at="2018-07-29T07:08:00Z" finished-at="2018-07-29T07:08:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://leaftaps.com/opentaps/control/main]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demosalesmanager]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="createLeadTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="createLeadTest" duration-ms="15988" started-at="2018-07-29T07:08:16Z" data-provider="fetchdata" finished-at="2018-07-29T07:08:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ravi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ravi local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8015721179]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[[crmsfa.createLead.lastName]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="closeBrser()[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="closeBrser" is-config="true" duration-ms="1145" started-at="2018-07-29T07:08:32Z" finished-at="2018-07-29T07:08:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrser -->
+        <test-method status="PASS" signature="flushReport()[pri:0, instance:week6.day2.cw.pages.TestCase02_CreateLead@19d02cb]" name="flushReport" is-config="true" duration-ms="1110" started-at="2018-07-29T07:08:33Z" finished-at="2018-07-29T07:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- week6.day2.cw.pages.TestCase02_CreateLead -->
+    </test> <!-- createLeadWithPOM -->
+  </suite> <!-- pageObject -->
+</testng-results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ListenersSuite">
+
+<listeners>
+<listener class-name="listeners.testng.ListerTestNg"></listener>
+
+</listeners>
+
+	<parameter name="url"
+		value="http://leaftaps.com/opentaps/control/main"></parameter>
+	<parameter name="uname" value="demosalesmanager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	
+	<test name="ListenersTest">
+		<classes>
+			<class name="listeners.testng.CreateLead" />
+		</classes>
+	</test> <!--  -->
+</suite> <!-- ListenersSuite -->
