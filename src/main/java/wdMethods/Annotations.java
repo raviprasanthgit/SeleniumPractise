@@ -53,7 +53,7 @@ public class Annotations extends SeMethods {
 		endResult();
 	}
 
-	@DataProvider(name="fetchdata",indices= {2})
+	@DataProvider(name="fetchdata")
 	public Object[][] getData() throws IOException
 
 	{
