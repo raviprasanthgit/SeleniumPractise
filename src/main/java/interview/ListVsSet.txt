@@ -1,0 +1,28 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain concept in the interview - use these hints:
+
+*Technical:*
+
+- Single dimensional interface
+- List allows duplicate and always ordered 
+	- Some of the implementing class: ArrayList, LinkedList
+- Set does not allow duplicate and can be ordered / random
+	- Some of the implementing class: HashSet, TreeSet, LinkedHashSet
+
+*Selenium:*
+
+Some examples here:
+
+- findElements return List<WebElement>
+- getWindowHandles return Set<String>
+
+*Project:*
+
+In our customized selenium automation framework, we implemented List and Set for wrapper methods:
+
+- getAllLinks returns only links (so List<WebElement>)
+- getAllWindows returns all opened windows (so Set<String)

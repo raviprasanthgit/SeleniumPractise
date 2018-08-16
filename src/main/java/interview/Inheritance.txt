@@ -1,0 +1,29 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain inheritance concept in the interview - use these hints:
+
+*Technical:*
+
+- ability in Java for one class/interface to inherit from another class/interface 
+- keyword: extends.
+- primary use: reusability.
+
+Types - Multi level & Multiple (not allowed due to ambiguity)
+
+*Selenium:*
+
+Some examples here:
+
+- ChromeDriver(C) extends RemoteWebDriver(C)
+- NoSuchElementException(C) extends NotFoundException(C) extends WebDriverException(C)
+- WebDriver(I) extends SearchContext(I)
+
+*Project:*
+
+In our customized selenium automation framework, we implemented inheritance by:
+
+- Testcases(C) extends ProjectMethods(C) extends SeMethods(C) extends Reporter(A)
+

@@ -35,7 +35,7 @@ public class NumberDigitsInAscending {
             }
         }
 		//print sorted Array
-		System.out.println(ArrayUtils.toString());
+//		System.out.println(ArrayUtils.toString());
 		//Print array without duplicates
 		System.out.print(a[0]);
 		for (int i = 1; i < index; i++) {

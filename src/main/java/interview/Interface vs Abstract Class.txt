@@ -1,0 +1,29 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain interface vs abstract class concept in the interview - use these hints:
+
+*Technical:*
+
+- interface and abstract class has abstract method but where as abstract class can have implementation as well.
+- both cannot be instantiated but abstract class can have sub class and that can be instantiated.
+- when you like just have a design, build interface whereas you want to share code among several closely related classes then build abstract class
+
+
+*Selenium:*
+
+Some examples here:
+
+- WebDriver, WebElement, Alert, TargetLocator (Interface)
+- By, AbstractWebDriverEventListener, AbstractCapabilities (Abstract class)
+
+*Project:*
+
+In our customized selenium automation framework, we implemented abstract class with:
+
+- Reporter (abstract methods for Selenium implementation)
+- WdMethods (abstract class that has ExtentReports)
+
+
