@@ -1,0 +1,17 @@
+1.What is the difference between page object model and project object model?
+
+Page Object Model: Its a design pattern required to create Object Repository for UI Elements. As per this model,for each Page there has to be a Page class.This page class will have Web Elements of the Web Page along with the methods that perform operations on these web elements.
+Along with this page factory could be used 
+Page Factory is an inbuilt Page Object Model concept for Selenium WebDriver but it is very optimized.
+Here as well, we follow the concept of separation of Page Object Repository and Test Methods. Additionally, with the help of PageFactory class, we use annotations @FindBy to find WebElement. We use initElements method to initialize web elements 
+
+Project Object Model: It is the fundamental unit for Maven Related Projects.Its basically a xml file which contains the project structure,dependencies,configuration details required to build the project.
+
+The POM was renamed from project.xml in Maven 1 to pom.xml in Maven 2. Instead of having a maven.xml file that contains the goals that can be executed, the goals or plugins are now configured in the pom.xml. When executing a task or goal, Maven looks for the POM in the current directory. It reads the POM, gets the needed configuration information, then executes the goal.
+
+Some of the configuration that can be specified in the POM are the project dependencies, the plugins or goals that can be executed, the build profiles, and so on. Other information such as the project version, description, developers, mailing lists and such can also be specified.
+
+
+2.It is possible to run test cases in parallel, By using page object model?if yes How to do that?
+
+Set parallel="classes" in Suite level of testng.xml file. Right click this xml and Run as TestNG Suite.

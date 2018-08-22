@@ -1,0 +1,17 @@
+1. Explain Grid, can a single system act as both Hub and node?
+
+The Selenium Grid is a testing tool which allows us to run our tests on different machines against 
+different browsers. It is a part of the Selenium Suite which specialise in running multiple tests 
+across different browsers, operating system and machines. 
+A grid consists of a single hub, and one or more nodes. Yes, a single system can act as both Hub and node.
+Hub is referred to a Server and Node, which can be multiple systems used for testing through the Grid network.
+
+The Selenium Hub(server) acts as the controller that receives the requests to execute tests on certain 
+platforms and browsers then redirects them to the appropriate Node that matches the request.  
+
+2. How do you change your Web driver to run in remote machines?
+
+Answer: We first create an object for the RemoteWebDriver class. In the constructor of the RemoteWebDriver class we pass the IP address of the remote machine in which
+	tests need to be run.
+	
+EX:	Syntax: RemoteWebDriver driver = new RemoteWebDriver(new URL("http://192.168.43.139:4444/wd/hub"), dc);

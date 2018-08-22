@@ -1,0 +1,38 @@
+1.What is the difference bitween final, finally, finalize keywords in java?
+
+Final: is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+Final is a keyword
+
+Finally: is used to place important code, it will be executed whether exception is handled or not.
+But finally is useful for
+    more than just exception handling - it allows the programmer to avoid having cleanup code accidentally bypassed by a return, continue, or break. Putting cleanup code in a finally block is
+always a good practice, even when no exceptions are anticipated.
+Finally is a block
+
+Finalize: is used to perform clean up processing just before an object is garbage collected.
+Finalize is a method.
+
+
+2.Explain the four different constructors to create a Hashmap with examples?
+
+HashMap(): This constructor constructs a default HashMap.
+HashMap<datatype1, datatype2> hm=new HashMap<datatype1, datatype2>();
+
+HashMap(Map m): This constructor initializes the hash map by using the elements of the given Map object m.
+Ex:HashMap<datatype1, datatype2> hm=new HashMap<datatype1, datatype2>();
+HashMap<datatype1, datatype2> hm1=new HashMap<datatype1, datatype2>(hm);
+
+HashMap(int capacity): 
+This constructor initializes the capacity of the hash map to the given integer value, capacity.
+Ex: HashMap<datatype1, datatype2> hm=new HashMap<datatype1, datatype2>(capacity);
+
+HashMap(int capacity, float fillRatio):
+This constructor initializes both the capacity and fill ratio of the hash map by using its arguments.
+ex: HashMap<datatype1, datatype2> hm=new HashMap<datatype1, datatype2>(2,2.5f);
+
+
+
+
+
+
+

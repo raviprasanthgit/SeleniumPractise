@@ -1,0 +1,28 @@
+How maven dependencies are downloaded and Stored?
+Maven dependencies are downloaded from repo1.maven.org and stored in local repository of the system (example, "C:\Users\TestLeaf\.m2\repository")
+
+Maven local repository is a local folder that is used to store project's dependencies (plugin jars and other files which are downloaded by Maven). 
+When we build a Maven project, all dependency files will be stored in your Maven local repository.
+
+
+Maven Lifecycle
+
+Default lifecycle has the following steps,
+
+-Generate source/generate resources : validate the project and verify all necessary information is available
+-Compile : compile the source code of the project
+-test : test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+-package : take the compiled code and package it in its distributable format, such as a JAR.
+-integration-test :  run the package and with the results of integration tests, quality could be determined.
+-install : install the package into the local repository.
+-deploy : deploy in the build environment, copies the final package to the remote repository for sharing with other developers and projects.
+
+Goal that we used have used so far...
+
+1) test	Test the application
+2) compile	Compile the TestCases and TestSuites
+3) test:test-resources	Copy any resources that must be present for run tests
+
+In addition to it, we have plugin goals and report goals...
+
+

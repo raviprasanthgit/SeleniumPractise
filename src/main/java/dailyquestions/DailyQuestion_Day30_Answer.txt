@@ -1,0 +1,21 @@
+1)What are the advantages of using GIT?
+Git is the most popular and widely used version control system. 
+Originally developed as an open source project in 2005 by the creator of Linux operating system, it is a matured and actively maintained environment. A huge number of developers rely upon Git version controlling to develop several types of commercial and non-commercial projects. 
+1. Performance:
+   Git performs very strongly and reliably when compared to other version control systems. New code changes can be easily commited, version branches can be effortlessly compared and merged, and code can also be optimized to perform better.
+2. WorkFlow is flexible: git has the qualities that allow to choose your own workflow. It can be as simple as a centralised workflow. 
+3. Revert the code files back to their previous state
+4. Recall and revert the entire project back to its previous    state
+5. Compare code changes over specific durations of time.
+6. Find who last modified a piece of code that might be causing    an issue or a problem
+7. Who introduced a perticular issue and when
+8. Quality and Security open source project
+   Git is a widely supported open source project with over ten    years of operational history. 
+
+2)What is the functions of "GIT PUSH" and "GIT PULL" in GIT?
+Developers need to manually pull upstream commits into their local repository or manually push their local commits back up to the central repository. The git remote command is really just an easier way to pass URLs to these "sharing" commands.
+GIT PUSH:
+Basically git commit "records changes to the repository" while git push "updates remote refs along with associated objects". So the first one is used in connection with your local repository, while the latter one is used to interact with a remote repository.
+
+GIT PULL: 
+ git pull origin master pulls the master branch from the remote called origin into your current branch. It only affects your current branch, not your local master branch. git pull is essentially a combination of git fetch and git merge ; it fetches the remote branch then merges it into your current branch. 

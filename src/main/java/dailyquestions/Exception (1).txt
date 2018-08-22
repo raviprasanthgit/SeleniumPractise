@@ -1,0 +1,24 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain concept in the interview - use these hints:
+
+*Technical:*
+
+- error that may occur
+- Types: Checked (Compile time) and Runtime 
+- Checked can be handled using try-catch or throws
+- Runtime only by try-catch
+
+*Selenium:*
+
+Some examples here:
+
+- All selenium exceptions are Runtime
+- Ex: NoSuchElementException, UnHandledAlertException
+
+*Project:*
+
+In our customized selenium automation framework, we implemented exceptions (with try-catch-finally) in all Selenium library methods.

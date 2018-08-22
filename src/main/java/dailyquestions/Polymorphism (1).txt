@@ -1,0 +1,44 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain polymorphism concept in the interview - use these hints:
+
+*Technical:*
+
+- ability of an object to take on many forms.
+- types: compile-time (overloading), runtime (overriding)
+- primary use: reusability.
+
+Overloading - method, operator
+  - multiple methods within the class share the same name with different parameters.
+Overriding  - method 
+  - Same method with same signature, but associated in a class & its subclass.
+
+*Selenium:*
+
+Some examples here:
+
+Overloading method
+- frame(int index), frame(String nameorid), frame(WebElement ele) of RemoteTargetLocator class
+- moveToElement(WebElement ele), moveToElement(WebElement ele,int x,int y) of Actions class
+- clickAndHold(WebElement target), clickAndHold()
+
+Overloading constructor
+RemoteWebDriver(), RemoteWebDriver(Capabilities capabilities)
+
+Overriding
+- ChromeDriver(C) has setFileDetector method and that overrides RemoteWebDriver(C) method
+- InternetExplorerDriver(C) has getScreenshotAs method and that overrides RemoteWebDriver(C) method
+
+*Project:*
+
+In our customized selenium automation framework, we implemented overloading by:
+
+- building multiple invokeApp methods like
+	a) invokeApp(String browser)
+	b) invokeApp(String browser, String url)
+
+- and we did not implement any overriding as our design did not require it
+

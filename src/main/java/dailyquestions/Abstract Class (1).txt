@@ -1,0 +1,24 @@
+Patterns to solve theoretical problems:
+
+- *3P Answers*
+- *Technical* | *Selenium* | *Project*
+
+For example, to explain abstract class concept in the interview - use these hints:
+
+*Technical:*
+
+- may or may not include abstract methods
+- cannot create object for abstract class
+- can have sub class and that can be instantiated.
+
+*Selenium:*
+
+Some examples here:
+
+- By, AbstractWebDriverEventListener, AbstractCapabilities
+
+*Project:*
+
+In our customized selenium automation framework, we implemented abstract class with:
+
+- Reporter (abstract methods for Selenium)
